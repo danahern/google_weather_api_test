@@ -22,6 +22,8 @@ class GoogleWeather
       @icon = "http://www.google.com#{val}"
     end
 
-
+    def attributes
+      {location: @location, temp_f: @temp_f, temp_c: @temp_c, humidity: @humidity, icon: @icon, wind_condition: @wind_condition, condition: @condition, day_of_week: @day_of_week, low: @low, high: @high}.reject{|a, b| b.nil? || b == ""}
+    end
   end
 end
