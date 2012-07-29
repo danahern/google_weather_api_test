@@ -4,6 +4,9 @@ require 'webmock'
 require 'vcr'
 require 'xmlsimple'
 
+require 'simplecov'
+SimpleCov.start
+
 require 'google_weather'
 
 RSpec.configure do |config|
