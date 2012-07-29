@@ -4,7 +4,8 @@ require 'google_weather/weather'
 class GoogleWeather
   attr_accessor :location, :connection
 
-  def initialize(location)
+  def initialize(location=nil)
+    raise LocationMissing, "No location specified" if location.nil?
     @location = location
     @connection = GoogleWeather::Connection.new(location)
   end
@@ -38,4 +39,5 @@ class GoogleWeather
     end
   end
   
+  class LocationMissing < StandardError; end
 end

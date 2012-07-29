@@ -1,12 +1,12 @@
-require 'open-uri'
 require 'xmlsimple'
+require 'net/http'
 
 class GoogleWeather
   class LocationInvalid < StandardError; end
   class Connection
     attr_accessor :response
 
-    def initialize(location)
+    def initialize(location=nil)
       @response = parse(location)
       raise LocationInvalid, "Invalid Location" if location_invalid?
       @response
@@ -19,14 +19,19 @@ class GoogleWeather
 
     def parse(location)
       begin
-        XmlSimple.xml_in(open(url(location)))
+        XmlSimple.xml_in(get(location).encode("UTF-8", "ISO-8859-1"))
       rescue SocketError => e
         nil
       end
     end
 
+    def get(location)
+      response = Net::HTTP.get_response(url(location))
+      response.body if response.is_a?(Net::HTTPSuccess)
+    end
+
     def url(location)
-      "http://www.google.com/ig/api?weather=#{URI.escape(location)}"
+      URI("http://www.google.com/ig/api?weather=#{URI.escape(location)}")
     end
   end
 end
