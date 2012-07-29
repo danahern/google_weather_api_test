@@ -4,7 +4,7 @@ Google API Gem Test
 
 ## Installation
 ```Ruby
-gem install 'google-weather', source: "https://github.com/danahern/google_weather_api_test"
+gem 'google_weather', git: "git://github.com/danahern/google_weather_api_test"
 ```
 
 ## Usage
