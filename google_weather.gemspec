@@ -6,8 +6,12 @@ Gem::Specification.new do |s|
   s.description = "A google weather API"
   s.authors     = ["Dan Ahern"]
   s.email       = 'me@danahern.com'
-  s.files       = ["lib/google_weather.rb"]
-  s.add_runtime_dependency "xml-simple"
+  s.files = %w(README.md Rakefile google_weather.gemspec)
+  s.files += Dir.glob("lib/**/*.rb")
+  s.files += Dir.glob("spec/**/*")
+  s.require_paths = ['lib']
+  s.test_files = Dir.glob("spec/**/*")
+  s.add_dependency "xml-simple"
   s.add_development_dependency "webmock"
   s.add_development_dependency "vcr"
   s.add_development_dependency "rspec"
