@@ -1,5 +1,16 @@
 # google_weather_api_test
-Google API Gem Test
+Google API Gem
+
+## What is this
+This is a code challenge, the goal was to spend a few hours and write a gem using TDD practices using the now disabled Google Weather API.
+Unfortunately because the google services no longer work, it's use a code demo.  The tests still pass because the VCR result is saved into the repository.
+
+Stats
+```Text
+Test Coverage: 96.09%
+Lines of Code: 123 (tested) / 128 (total)
+Time Spent: 4 hours
+```
 
 
 ## Installation
@@ -48,7 +59,7 @@ To get the forecast for a particular day
 @google_weather.sun
 ```
 
-To get the 4 day forecast 
+To get the 4 day forecast
 
 ```Ruby
 @google_weather.forecasts
