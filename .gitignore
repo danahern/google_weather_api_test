@@ -17,3 +17,6 @@ rerun.txt
 pickle-email-*.html
 coverage
 .DS_Store
+.rvmrc
+.ruby-version
+.gemset-version
