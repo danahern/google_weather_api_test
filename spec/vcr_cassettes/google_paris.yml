@@ -1,0 +1,92 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://www.google.com/ig/api?weather=Paris%20France
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: !binary |-
+        T0s=
+    headers:
+      !binary "WC1GcmFtZS1PcHRpb25z":
+      - !binary |-
+        U0FNRU9SSUdJTg==
+      !binary "Q29udGVudC1UeXBl":
+      - !binary |-
+        dGV4dC94bWw7IGNoYXJzZXQ9SVNPLTg4NTktMQ==
+      !binary "RGF0ZQ==":
+      - !binary |-
+        U3VuLCAyOSBKdWwgMjAxMiAxNjoyMTo1OSBHTVQ=
+      !binary "UHJhZ21h":
+      - !binary |-
+        bm8tY2FjaGU=
+      !binary "RXhwaXJlcw==":
+      - !binary |-
+        RnJpLCAwMSBKYW4gMTk5MCAwMDowMDowMCBHTVQ=
+      !binary "Q2FjaGUtQ29udHJvbA==":
+      - !binary |-
+        bm8tY2FjaGUsIG5vLXN0b3JlLCBtdXN0LXJldmFsaWRhdGU=
+      !binary "U2V0LUNvb2tpZQ==":
+      - !binary |-
+        UFJFRj1JRD00OWYzNDllOWM0YzIwMTUxOlRNPTEzNDM1Nzg5MTk6TE09MTM0
+        MzU3ODkxOTpTPXRaTFhQNDRhU3JmUmZ5M1o7IGV4cGlyZXM9VHVlLCAyOS1K
+        dWwtMjAxNCAxNjoyMTo1OSBHTVQ7IHBhdGg9LzsgZG9tYWluPS5nb29nbGUu
+        Y29t
+      !binary "WC1Db250ZW50LVR5cGUtT3B0aW9ucw==":
+      - !binary |-
+        bm9zbmlmZg==
+      !binary "U2VydmVy":
+      - !binary |-
+        aWdmZQ==
+      !binary "WC1Yc3MtUHJvdGVjdGlvbg==":
+      - !binary |-
+        MTsgbW9kZT1ibG9jaw==
+      !binary "VHJhbnNmZXItRW5jb2Rpbmc=":
+      - !binary |-
+        Y2h1bmtlZA==
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        PD94bWwgdmVyc2lvbj0iMS4wIj8+PHhtbF9hcGlfcmVwbHkgdmVyc2lvbj0i
+        MSI+PHdlYXRoZXIgbW9kdWxlX2lkPSIwIiB0YWJfaWQ9IjAiIG1vYmlsZV9y
+        b3c9IjAiIG1vYmlsZV96aXBwZWQ9IjEiIHJvdz0iMCIgc2VjdGlvbj0iMCIg
+        Pjxmb3JlY2FzdF9pbmZvcm1hdGlvbj48Y2l0eSBkYXRhPSJQYXJpcywgzmxl
+        LWRlLUZyYW5jZSIvPjxwb3N0YWxfY29kZSBkYXRhPSJQYXJpcyBGcmFuY2Ui
+        Lz48bGF0aXR1ZGVfZTYgZGF0YT0iIi8+PGxvbmdpdHVkZV9lNiBkYXRhPSIi
+        Lz48Zm9yZWNhc3RfZGF0ZSBkYXRhPSIyMDEyLTA3LTI5Ii8+PGN1cnJlbnRf
+        ZGF0ZV90aW1lIGRhdGE9IjE5NzAtMDEtMDEgMDA6MDA6MDAgKzAwMDAiLz48
+        dW5pdF9zeXN0ZW0gZGF0YT0iVVMiLz48L2ZvcmVjYXN0X2luZm9ybWF0aW9u
+        PjxjdXJyZW50X2NvbmRpdGlvbnM+PGNvbmRpdGlvbiBkYXRhPSJDbGVhciIv
+        Pjx0ZW1wX2YgZGF0YT0iNzAiLz48dGVtcF9jIGRhdGE9IjIxIi8+PGh1bWlk
+        aXR5IGRhdGE9Ikh1bWlkaXR5OiA0MyUiLz48aWNvbiBkYXRhPSIvaWcvaW1h
+        Z2VzL3dlYXRoZXIvc3VubnkuZ2lmIi8+PHdpbmRfY29uZGl0aW9uIGRhdGE9
+        IldpbmQ6IFNXIGF0IDE1IG1waCIvPjwvY3VycmVudF9jb25kaXRpb25zPjxm
+        b3JlY2FzdF9jb25kaXRpb25zPjxkYXlfb2Zfd2VlayBkYXRhPSJTdW4iLz48
+        bG93IGRhdGE9IjU3Ii8+PGhpZ2ggZGF0YT0iNzUiLz48aWNvbiBkYXRhPSIv
+        aWcvaW1hZ2VzL3dlYXRoZXIvbW9zdGx5X3N1bm55LmdpZiIvPjxjb25kaXRp
+        b24gZGF0YT0iTW9zdGx5IFN1bm55Ii8+PC9mb3JlY2FzdF9jb25kaXRpb25z
+        Pjxmb3JlY2FzdF9jb25kaXRpb25zPjxkYXlfb2Zfd2VlayBkYXRhPSJNb24i
+        Lz48bG93IGRhdGE9IjYzIi8+PGhpZ2ggZGF0YT0iNzUiLz48aWNvbiBkYXRh
+        PSIvaWcvaW1hZ2VzL3dlYXRoZXIvbW9zdGx5X3N1bm55LmdpZiIvPjxjb25k
+        aXRpb24gZGF0YT0iUGFydGx5IFN1bm55Ii8+PC9mb3JlY2FzdF9jb25kaXRp
+        b25zPjxmb3JlY2FzdF9jb25kaXRpb25zPjxkYXlfb2Zfd2VlayBkYXRhPSJU
+        dWUiLz48bG93IGRhdGE9IjY2Ii8+PGhpZ2ggZGF0YT0iNzciLz48aWNvbiBk
+        YXRhPSIvaWcvaW1hZ2VzL3dlYXRoZXIvbW9zdGx5X3N1bm55LmdpZiIvPjxj
+        b25kaXRpb24gZGF0YT0iUGFydGx5IFN1bm55Ii8+PC9mb3JlY2FzdF9jb25k
+        aXRpb25zPjxmb3JlY2FzdF9jb25kaXRpb25zPjxkYXlfb2Zfd2VlayBkYXRh
+        PSJXZWQiLz48bG93IGRhdGE9IjY2Ii8+PGhpZ2ggZGF0YT0iODYiLz48aWNv
+        biBkYXRhPSIvaWcvaW1hZ2VzL3dlYXRoZXIvbW9zdGx5X3N1bm55LmdpZiIv
+        Pjxjb25kaXRpb24gZGF0YT0iTW9zdGx5IFN1bm55Ii8+PC9mb3JlY2FzdF9j
+        b25kaXRpb25zPjwvd2VhdGhlcj48L3htbF9hcGlfcmVwbHk+
+    http_version: 
+  recorded_at: Sun, 29 Jul 2012 16:21:58 GMT
+recorded_with: VCR 2.2.4

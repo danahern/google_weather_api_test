@@ -1,0 +1,49 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://www.google.com/ig/api?weather=Neverland%20Make%20Believe
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      Content-Type:
+      - text/xml; charset=ISO-8859-1
+      Date:
+      - Sun, 29 Jul 2012 16:21:59 GMT
+      Pragma:
+      - no-cache
+      Expires:
+      - Fri, 01 Jan 1990 00:00:00 GMT
+      Cache-Control:
+      - no-cache, no-store, must-revalidate
+      Set-Cookie:
+      - PREF=ID=276eedb3f0bdb68b:TM=1343578919:LM=1343578919:S=WTDkU_22xr46nRVz; expires=Tue,
+        29-Jul-2014 16:21:59 GMT; path=/; domain=.google.com
+      X-Content-Type-Options:
+      - nosniff
+      Server:
+      - igfe
+      X-Xss-Protection:
+      - 1; mode=block
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: US-ASCII
+      string: <?xml version="1.0"?><xml_api_reply version="1"><weather module_id="0"
+        tab_id="0" mobile_row="0" mobile_zipped="1" row="0" section="0" ><problem_cause
+        data=""/></weather></xml_api_reply>
+    http_version: 
+  recorded_at: Sun, 29 Jul 2012 16:21:58 GMT
+recorded_with: VCR 2.2.4
