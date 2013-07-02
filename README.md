@@ -12,6 +12,10 @@ Lines of Code: 123 (tested) / 128 (total)
 Time Spent: 4 hours
 ```
 
+## Testing
+```Ruby
+rspec .
+```
 
 ## Installation
 ```Ruby
